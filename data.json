@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Axel Molina",
+        "role": "Desarrollador Frontend",
+        "avatar": "https://api.dicebear.com/10.x/adventurer-neutral/svg?rotate=-360&translateY=-1&eyebrowsProbability=98&eyesProbability=81&glassesProbability=100&glassesVariant=&mouthVariant=variant26&backgroundColor=ecad80&eyebrowsVariant=variant13&borderRadius=0&mouthProbability=100&eyesVariant=variant13,variant14&flip=horizontal&seed=axel"
+    },
+    {
+        "name": "Rocio Torres",
+        "role": "Diseñador UX/UI",
+        "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Aneka&colors=blue,indigo"
+    },
+    {
+        "name": "Sasha Landriel",
+        "role": "Desarrollador Backend",
+        "avatar": "https://api.dicebear.com/10.x/adventurer-neutral/svg?rotate=-360&translateY=-1&eyebrowsProbability=98&eyesProbability=81&glassesProbability=100&glassesVariant=variant01&mouthVariant=variant23&backgroundColor=763900&eyebrowsVariant=variant13&borderRadius=0&mouthProbability=100&eyesVariant=variant11&flip=horizontal&seed=axel"
+    },
+    { 
+        "name": "luz duarte",
+        "role": "Desarrollador Frontend",
+        "avatar": "https://api.dicebear.com/10.x/thumbs/svg?bodyProbability=100&eyesVariant=variant01&mouthVariant=variant01,variant02&backgroundColor=69d2e7,b6e3f4&backgroundColorFill=radial&seed=luz"
+    
+
+    },
+    {
+        "name": "alejo storaccio",
+        "role": "Diseñador UX/UI",
+        "avatar":" https://api.dicebear.com/10.x/bottts-neutral/svg?eyesVariant=frame2&mouthVariant=square02&textureVariant=camo02,circuits,dirty01,dirty02&backgroundColor=de6811,c67c11,b18911,9b9312,7a9f12,40a843,7681f5,9975ea,b46bd6,d95c9a,e25a75,978d87,8f8f8f,879198&seed=alejo"
+    },
+    {
+       "name": "matias aguero",
+       "role": "Desarrollador Backend",
+        "avatar": "https://api.dicebear.com/10.x/lorelei/svg?beardVariant=variant02&earringsVariant=&eyebrowsVariant=variant03&headVariant=variant04&hairVariant=variant34,variant44&mouthVariant=happy07&noseVariant=variant05&eyesVariant=variant03&glassesVariant=&seed=matias"
+        
+    }  
+]

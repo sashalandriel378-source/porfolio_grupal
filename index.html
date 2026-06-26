@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Grupo - Creado para IPET 379.">
+    <title>Portafolio Grupal | IPET 379</title>
+    <link rel="icon" type="image/png" href="./recursos_assets/logo3i.png">
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Abstract background with CSS blobs -->
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Encabezado superior con el Logo -->
+    <header class="site-header">
+        <a href="#" class="logo">
+            <img src="./recursos_assets/logo3a.png" alt="Logo del Grupo" class="logo-image"
+                onerror="this.style.display='none'">
+            <span class="logo-text">Equipo <span class="accent">Dinámico</span></span>
+        </a>
+    </header>
+
+    <main class="hero">
+        <!-- Glassmorphism Card -->
+        <div class="glass-card">
+            <div class="profile-img-container">
+                <img src="./recursos_assets/logoB.png" alt="Cristina Maia" id="profile-img">
+            </div>
+
+            <div class="content">
+                <span class="badge">Integrantes del Equipo</span>
+                <h1 class="name">SRA</h1>
+
+                <div class="team-members">
+                    <h2 class="roles" id="team-roles">
+                        <span class="role">Cargando datos...</span>
+                    </h2>
+                </div>
+
+                <p class="subtitle" id="subtitle-text">7mo Año - IPET 379</p>
+
+                <div class="cta-group">
+                    <button class="btn btn-primary" onclick="window.location.href='proyectos.html'">Nuestros
+                        Proyectos</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
