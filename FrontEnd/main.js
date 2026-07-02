@@ -2,21 +2,34 @@
 let teamMembers = [];
 let currentIndex = 0;
 
-// Función para cargar los datos del JSON
 async function loadTeamData() {
+    const backendUrl = '/api/team';
+
     try {
-        const response = await fetch('data.json');
+        const response = await fetch(backendUrl, { cache: 'no-store' });
+
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
+
         teamMembers = await response.json();
-        
-        // Inicializar la interfaz una vez cargados los datos
-        initCarousel();
     } catch (error) {
-        console.error("Error cargando los datos del equipo:", error);
-        document.getElementById('team-roles').innerHTML = '<span class="role">Error cargando datos... Se requiere usar un servidor local (ej. Live Server)</span>';
+        console.warn('Backend no disponible, cargando data local:', error);
+
+        try {
+            const localResponse = await fetch('data.json', { cache: 'no-store' });
+            if (!localResponse.ok) {
+                throw new Error(`HTTP error local data! status: ${localResponse.status}`);
+            }
+            teamMembers = await localResponse.json();
+        } catch (localError) {
+            console.error('Error cargando data local:', localError);
+            document.getElementById('team-roles').innerHTML = '<span class="role">Error cargando datos... Inicia el backend o abre el archivo con Live Server.</span>';
+            return;
+        }
     }
+
+    initCarousel();
 }
 
 // Renderiza los nombres de los integrantes destacando el actual
